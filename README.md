@@ -18,7 +18,7 @@ Add miscellaneous functions to Laravel.
 
 ## Example
 - Upload your SVG icon file `exmple.svg` to `resources/k6_more_laravel/icon/`.
-- And the, excute `MoreLaravel::icon( 'example' );`
+- And then, test `k6_more::icon( 'example' );`
 
 ## Distribution
 - https://packagist.org/packages/kla6/more-laravel
