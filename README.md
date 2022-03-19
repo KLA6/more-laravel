@@ -3,3 +3,7 @@
 <br><br><br><br><br></p>
 
 # More Laravel by KLA6
+Add misc. functions to Laravel.
+
+## Type
+- Comporser Library for Laravel
