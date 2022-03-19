@@ -4,7 +4,7 @@ namespace Kla6\MoreLaravel;
 
 # use \App\Http\Controllers\Controller;
 
-class k6_more_function { # extends Controller {
+class Func { # extends Controller {
 
   static function test() { echo 'test'; }
 
