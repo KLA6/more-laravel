@@ -16,5 +16,12 @@
         "psr-4" : {
             "Kla6\\MoreLaravel\\" : "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kla6\\MoreLaravel\\MoreLaravelServiceProvider"
+            ]
+        }
     }
 }
