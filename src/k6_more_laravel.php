@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Kla6\MoreLaravel;
 
-use App\Http\Controllers\Controller;
+use \App\Http\Controllers\Controller;
 
 class k6_more_function extends Controller {
+
+  static function test() { echo 'test'; }
 
   /**
    * Icon
