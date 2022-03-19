@@ -14,7 +14,7 @@ class MoreLaravelController extends Controller {
    */
   static function icon( $code = 'k6_logo', $width = 16, $height = 16, $class = '', $style = '', $attr = '' ) {
     $path = config            ( 'k6_more_laravel.icon_path'                                                                      );
-    $svg  = file_get_contents ( "$path/$code.svg"                                                                                );
+    $svg  = file_get_contents ( "$path/icon/$code.svg"                                                                           );
     return  str_replace       ( '<svg', "<svg width=\"$width\" height=\"$height\" class=\"$class\" style=\"$style\" $attr", $svg );
   } # function
 

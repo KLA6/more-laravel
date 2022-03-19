@@ -9,16 +9,12 @@ Add miscellaneous functions to Laravel.
 - Comporser Library for Laravel
 
 ## Install
-```
-composer require kla6/more-laravel
-php artisan vendor:publish
-```
+- `composer require kla6/more-laravel`
+- `php artisan vendor:publish`
 
-## Config
+## Publish Result
 - `config/k6_more_laravel.php`
-
-## Resource
-- `resources/k6_more_laravel`
+- `resources/k6_more_laravel/...`
 
 ## Example
 - Upload your SVG icon file `exmple.svg` to `resources/k6_more_laravel/icon/`.
