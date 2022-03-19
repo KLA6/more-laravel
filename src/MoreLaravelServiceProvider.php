@@ -10,8 +10,8 @@ class MoreLaravelServiceProvider extends ServiceProvider {
   public function boot() {
 
     $this->publishes( [
-      __DIR__ . '/../config/k6_more_laravel.php'            =>    config_path( 'k6_more_laravel.php'         ),
-      __DIR__ . '/../resources/k6_more_laravel/k6_logo.svg' => resources_path( 'k6_more_laravel/k6_logo.svg' ),
+      __DIR__ . '/../config/k6_more_laravel.php'            =>   config_path( 'k6_more_laravel.php'         ),
+      __DIR__ . '/../resources/k6_more_laravel/k6_logo.svg' => resource_path( 'k6_more_laravel/k6_logo.svg' ),
     ] );
 
     # $this->loadViewsFrom     ( __DIR__ . '/../views', 'c9' );
