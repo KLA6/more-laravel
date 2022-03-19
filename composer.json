@@ -1,0 +1,16 @@
+{
+    "name": "kla6/more-laravel",
+    "description": "More Laravel by KLA6",
+    "authors": [
+        {
+            "name": "KLA6",
+            "email": "kla6.net@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4" : {
+            "KLA6\\more-laravel\\" : "src"
+        }
+    }
+}
