@@ -13,11 +13,11 @@ Add miscellaneous functions to Laravel.
 - `php artisan vendor:publish`
 
 ## Publish Result
-- `config/k6_more_laravel.php`
-- `resources/k6_more_laravel/...`
+- `/config/k6_more_laravel.php`
+- `/resources/k6_more_laravel/...`
 
 ## Example
-- Upload your SVG icon file `exmple.svg` to `resources/k6_more_laravel/icon/`.
+- Upload your SVG icon file `exmple.svg` to `/resources/k6_more_laravel/icon/`.
 - And then, test `k6_more::icon( 'example' );`
 
 ## Distribution
