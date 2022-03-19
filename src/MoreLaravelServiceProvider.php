@@ -24,6 +24,7 @@ class MoreLaravelServiceProvider extends ServiceProvider {
     # $this->mergeConfigFrom( __DIR__ . '/../config/k6_more_laravel.php', 'k6_more_laravel' ); # 왜 필요한 것인지 아직 모른다.
 
     $this->app->make( 'Kla6\MoreLaravel\MoreLaravelController' );
+  //$this->app->make( 'Kla6\MoreLaravel\Facades\MoreLaravelController' );
     $this->app->bind( 'MoreLaravel', function( $app ) { return new MoreLaravelController(); } ); # https://dev.to/cleancodestudio/how-to-make-laravel-facades-tutorial-10jn
 
   } # function
