@@ -23,7 +23,7 @@
                 "Kla6\\MoreLaravel\\MoreLaravelServiceProvider"
             ],
             "aliases": {
-                "MoreLaravel": "Kla6\\MoreLaravel\\Facades\\MoreLaravelFacade"
+                "k6_more": "Kla6\\MoreLaravel\\MoreLaravelFacade"
             }
         }
     }

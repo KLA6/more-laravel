@@ -3,7 +3,7 @@
 <br><br><br><br><br></p>
 
 # More Laravel by KLA6
-Add misc. functions to Laravel.
+Add miscellaneous functions to Laravel.
 
 ## Type
 - Comporser Library for Laravel
@@ -22,3 +22,4 @@ php artisan vendor:publish
 - https://www.lesstif.com/php-and-laravel/php-composer-36209479.html
 - https://www.lesstif.com/php-and-laravel/php-composer-packagist-org-24444981.html
 - https://devdojo.com/devdojo/how-to-create-a-laravel-package
+- https://dev.to/cleancodestudio/how-to-make-laravel-facades-tutorial-10jn
