@@ -4,14 +4,17 @@
     "authors": [
         {
             "name": "KLA6",
-            "email": "kla6.net@gmail.com"
+            "email": "kla6.net@gmail.com",
+            "homepage": "https://github.com/KLA6"
         }
     ],
     "license": "MIT",
-    "require": {},
+    "require": {
+        "php": "^8.0"
+    },
     "autoload": {
         "psr-4" : {
-            "KLA6\\more-laravel\\" : "src"
+            "kla6\\more-laravel\\" : "src/"
         }
     }
 }
