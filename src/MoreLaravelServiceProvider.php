@@ -9,22 +9,19 @@ class MoreLaravelServiceProvider extends ServiceProvider {
 
   public function boot() {
 
-    $this->publishes( [ __DIR__ . '/../config/k6_more_laravel.php' => config_path( 'k6_more_laravel.php' ), ] );
+    $this->publishes( [
+      __DIR__ . '/../config/k6_more_laravel.php'            =>    config_path( 'k6_more_laravel.php'         ),
+      __DIR__ . '/../resources/k6_more_laravel/k6_logo.svg' => resources_path( 'k6_more_laravel/k6_logo.svg' ),
+    ] );
 
-    // Route::middleware('web')->namespace(__NAMESPACE__ . '\Controllers')->group(__DIR__ . '/../routes.php');
-    // Route::prefix('api')->middleware('api')->namespace(__NAMESPACE__ . '\Controllers')->group(__DIR__ . '/../api.php');
-    // $this->publishes([ __DIR__ . '/../config.php' => config_path('notification.php'), ]);
-
-    // $package_path = dirname(__DIR__);
-    // $this->loadViewsFrom("$package_path/views", 'c9');
-
-    // $this->loadMigrationsFrom(__DIR__ . '/../migrations');
+    # $this->loadViewsFrom     ( __DIR__ . '/../views', 'c9' );
+    # $this->loadMigrationsFrom( __DIR__ . '/../migrations'  );
 
   } # function
 
   public function register() {
 
-    $this->mergeConfigFrom( __DIR__ . '/../config/k6_more_laravel.php', 'k6_more_laravel' );
+    # $this->mergeConfigFrom( __DIR__ . '/../config/k6_more_laravel.php', 'k6_more_laravel' ); # 왜 필요한 것인지 아직 모른다.
 
     $this->app->make( 'Kla6\MoreLaravel\MoreLaravelController' );
 

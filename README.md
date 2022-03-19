@@ -11,6 +11,9 @@ Add misc. functions to Laravel.
 ## Distribution
 - https://packagist.org/packages/kla6/more-laravel
 
+## Install
+-
+
 ## Reference
 - https://www.lesstif.com/php-and-laravel/php-composer-36209479.html
 - https://www.lesstif.com/php-and-laravel/php-composer-packagist-org-24444981.html
