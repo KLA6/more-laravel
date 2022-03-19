@@ -2,9 +2,9 @@
 
 namespace Kla6\MoreLaravel;
 
-# use \App\Http\Controllers\Controller;
+use \App\Http\Controllers\Controller;
 
-class Func { # extends Controller {
+class MoreLaravelController extends Controller {
 
   static function test() { echo 'test'; }
 

@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4" : {
-            "Kla6\\MoreLaravel\\" : "src/"
+            "Kla6\\MoreLaravel\\" : "src"
         }
     },
     "extra": {
