@@ -8,6 +8,9 @@ Add misc. functions to Laravel.
 ## Type
 - Comporser Library for Laravel
 
+## Distribution
+- https://packagist.org/packages/kla6/more-laravel
+
 ## Reference
 - https://www.lesstif.com/php-and-laravel/php-composer-36209479.html
 - https://www.lesstif.com/php-and-laravel/php-composer-packagist-org-24444981.html
