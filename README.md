@@ -8,15 +8,26 @@ Add miscellaneous functions to Laravel.
 ## Type
 - Comporser Library for Laravel
 
-## Distribution
-- https://packagist.org/packages/kla6/more-laravel
-
-
 ## Install
 ```
 composer require kla6/more-laravel
 php artisan vendor:publish
 ```
+
+## Config
+- `config/k6_more_laravel.php`
+
+## Resource
+- `resources/k6_more_laravel`
+
+## Example
+- Upload your SVG icon file `exmple.svg` to `resources/k6_more_laravel/icon/`.
+- And the, excute `MoreLaravel::icon( 'example' );`
+
+## Distribution
+- https://packagist.org/packages/kla6/more-laravel
+- https://github.com/KLA6/more-laravel
+- https://more-laravel.kla6.net
 
 ## Reference
 - https://www.lesstif.com/php-and-laravel/php-composer-36209479.html
