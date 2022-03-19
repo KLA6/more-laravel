@@ -6,11 +6,11 @@ namespace Kla6\MoreLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class K6MoreLaravel extends Facade {
+class MoreLaravelFacade extends Facade {
 
   protected static function getFacadeAccessor() {
 
-    return 'K6MoreLaravel';
+    return 'MoreLaravel';
 
   } # function
 

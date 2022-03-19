@@ -13,15 +13,18 @@
         "php": "^8.0"
     },
     "autoload": {
-        "psr-4" : {
-            "Kla6\\MoreLaravel\\" : "src"
+        "psr-4": {
+            "Kla6\\MoreLaravel\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Kla6\\MoreLaravel\\MoreLaravelServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "MoreLaravel": "Kla6\\MoreLaravel\\Facade"
+            }
         }
     }
 }
