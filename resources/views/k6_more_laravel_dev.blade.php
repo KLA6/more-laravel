@@ -3,7 +3,7 @@
   # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- # Repository Title Icon
   $REPO  = 'more-laravel';
   $TITLE = 'More Laravel by KLA6';
-  $ICON  = '';
+  $ICON  = 'https://raw.githubusercontent.com/KLA6/more-laravel/main/index_icon.svg';
 
   # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- # File # 'Git' => 'Laravel'
   $FILE = [
@@ -16,17 +16,18 @@
   ];
 
   # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- # Class
-  $CLASS = [ '\Kla6\MoreLaravel\MoreLaravelController' => 'vendor/kla6/more-laravel/src/MoreLaravelController.php' ];
+  $CLASS = [
+    '\Kla6\MoreLaravel\MoreLaravelController' => 'vendor/kla6/more-laravel/src/MoreLaravelController.php',
+  ];
 
   # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- # Git Add Commit Push
   if(   $_POST['msg'] ?? null
   &&    $_POST['pw' ] ?? null                 ) {
-    if( $_POST['pw' ] == env( 'K6_PASSWORD' ) ) {                                       # 비번 확인
-      foreach( $FILE as $K => $V ) copy( base_path( $V ), base_path( "../$REPO/$K" ) ); # 파일 복사
-      chdir( base_path( "../$REPO" ) );
-      echo( "git add . ;  git commit -m '$_POST[msg]' ; git push"            );         # 깃   애드 커밋 푸시
-      exec( "git add . ;  git commit -m '$_POST[msg]' ; git push"            );         # 깃   애드 커밋 푸시
-    //exit( "<script> location.replace( '$_SERVER[REQUEST_URI]' ) </script>" );
+    if( $_POST['pw' ] == env( 'K6_PASSWORD' ) ) {                                        # 비번 확인
+      foreach( $FILE as $K => $V ) copy ( base_path( $V ), base_path( "../$REPO/$K" ) ); # 파일 복사
+                                   chdir(                  base_path( "../$REPO"    ) );
+      exec( "git add .  ; git commit -m '$_POST[msg]'           ; git push"  );          # 깃   애드 커밋 푸시
+      exit( "<script> location.replace( '$_SERVER[REQUEST_URI]' ) </script>" );
     } # if
   } # if
 
@@ -52,14 +53,28 @@
 </head>
 <body class="p-3 p-md-5 k6-article">
 
+  <? # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- # Title ?>
   <h1><?= $TITLE ?></h1>
-  <p class="text-danger">If you're not contributing to this library, ignore or delete this file, because this file is NOT for using this library, BUT for developing this library.</p>
-  <p>This file helps the development cycle of [ code → test → git add commit push → git → release composer update ] to be easier.</p>
-  <p>To use this file, follow these steps.</p>
+  <p>This page is from <code>resources/views/k6_more_laravel_dev.blade.php</code> file.</p>
+  <p class="text-danger">If you're not contributing to this library, ignore or delete the file, because the file is NOT for using this library, BUT for developing this library.</p>
+  <p>The file helps the development cycle of [ code → test → git add commit push → git → release composer update ] to be easier.</p>
+  <p>To use the file, follow these steps.</p>
   <ul>
-    <li>/routes/web.php → Route::any( '/k6_more_laravel_dev', function () { return view( 'k6_more_laravel_dev' ); } );</li>
-    <li>/.env           → K6_PASSWORD="your_password"</li>
+    <li>On <code>/routes/web.php</code>, add <code>Route::any( '/k6_more_laravel_dev', function () { return view( 'k6_more_laravel_dev' ); } );</code>.</li>
+    <li>On <code>/.env</code>,           add <code>K6_PASSWORD="your_password"</code>.</li>
   </ul>
+
+  <? # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- # Test ?>
+  <h2>Test</h2>
+  <p>Ignore the content in the below box.</p>
+  <div class="p-3 rounded border"><?php
+    echo k6_more::icon( code  : 'k6_logo'
+                      , width : 64
+                      , height: 64
+                      , class : 'text-success rounded'
+                      , style : 'padding: .5rem; background-color: var( --bs-dark );'
+                      , attr  : 'data-test="test"' )
+  ?></div>
 
   <? # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- # File ?>
   <h2>File</h2>
